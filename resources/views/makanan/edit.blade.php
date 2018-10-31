@@ -34,19 +34,41 @@
 									<div class="form-group has-success">
 										<label class="control-label">Pilih Jenis Makanan</label>
 										<select class="form-control custom-select" name="kategori" value="{{$makanan->kategori}}">
-											<option value="Berat">Berat</option>
+											@if($makanan->kategori == 'Berat')
+											<option value="Berat" selected>Berat</option>
 											<option value="Ringan">Ringan</option>
+											@elseif($makanan->kategori == 'Ringan')
+											<option value="Berat" >Berat</option>
+											<option value="Ringan" selected>Ringan</option>
+											@endif
 										</select>
 										<small class="form-control-feedback"></small> </div>
 									</div>
 									<div class="col-md-6">
 										<div class="form-group has-success">
 											<label class="control-label">Level Pedas</label>
-											<select class="form-control custom-select" data-placeholder="Choose a Category"name="level" value="{{$makanan->level_pedas}}" tabindex="1">
+											<select class="form-control custom-select" data-placeholder="Choose a Category"name="level" tabindex="1">
+												@if($makanan->level_pedas == 'level-1')
+												<option value="level-1" selected>Level 1</option>
+												<option value="level-2">Level 2</option>
+												<option value="level-3">Level 3</option>
+												<option value="level-4">Level 4</option>
+												@elseif($makanan->level_pedas == 'level-2')
+												<option value="level-1" >Level 1</option>
+												<option value="level-2" selected>Level 2</option>
+												<option value="level-3">Level 3</option>
+												<option value="level-4">Level 4</option>
+												@elseif($makanan->level_pedas == 'level-3')
+												<option value="level-1" >Level 1</option>
+												<option value="level-2">Level 2</option>
+												<option value="level-3" selected>Level 3</option>
+												<option value="level-4">Level 4</option>
+												@elseif($makanan->level_pedas == 'level-4')
 												<option value="level-1">Level 1</option>
 												<option value="level-2">Level 2</option>
-												<option value="level-3">Level 5</option>
-												<option value="level-4">Level 4</option>
+												<option value="level-3">Level 3</option>
+												<option value="level-4" selected>Level 4</option>
+												@endif
 											</select>
 										</div>
 									</div>
