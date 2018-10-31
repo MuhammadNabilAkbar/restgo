@@ -298,8 +298,8 @@
                                 </li>
                                 <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">News</span></a>
                                     <ul aria-expanded="false" class="collapse">
-                                        <li><a href="#">List News</a></li>
-                                        <li><a href="#">Tambah News</a></li>
+                                        <li><a href="{{route('news.index')}}">List News</a></li>
+                                        <li><a href="{{route('news.create')}}">Tambah News</a></li>
                                     </ul>
                                 </li>
                             </ul>
