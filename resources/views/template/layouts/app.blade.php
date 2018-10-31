@@ -280,8 +280,8 @@
                                 </li>
                                 <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Pegawai</span></a>
                                     <ul aria-expanded="false" class="collapse">
-                                        <li><a href="#">List Pegawai</a></li>
-                                        <li><a href="#">Tambah Pegawai</a></li>
+                                        <li><a href="{{url('pegawai')}}">List Pegawai</a></li>
+                                        <li><a href="{{url('pegawai/create')}}">Tambah Pegawai</a></li>
                                     </ul>
                                 </li>
                                 <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Kritik & Saran</span></a>
