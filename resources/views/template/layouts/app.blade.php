@@ -250,8 +250,8 @@
                                 <li class="nav-label">Features</li>
                                 <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Profile</span></a>
                                     <ul aria-expanded="false" class="collapse">
-                                        <li><a href="#">List Profile</a></li>
-                                        <li><a href="#">Tambah Profile</a></li>
+                                        <li><a href="{{ route('profile.index') }}">List Profile</a></li>
+                                        <li><a href="{{ route('profile.create') }}">Tambah Profile</a></li>
                                     </ul>
                                 </li>
                                 <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Menu Makanan</span></a>
