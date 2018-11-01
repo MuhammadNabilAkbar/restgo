@@ -105,10 +105,12 @@ class ProfileController extends Controller
           $file->move($path,$fileName);
           $profile->image = $fileName;
         }
+        if ($request->akreditasi == "") {
+            $profile->akreditasi = $profile->akreditasi;
+        }
 
         $profile->email = $request->email;
         $profile->nama_restaurant = $request->nama_restaurant;
-        $profile->akreditasi = $request->akreditasi;
         $profile->jenis_restaurant = $request->jenis_restaurant;
         $profile->alamat = $request->alamat;
         $profile->no_telp = $request->no_telp;

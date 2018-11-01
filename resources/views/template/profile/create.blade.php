@@ -33,7 +33,7 @@
                                   <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>Nama Restaurant<span style="color:red;"> *</span></label>
-                                        <input type="text"name="nama_restaurant" class="form-control" value="{{ old('nama_restaurant') }}">
+                                        <input type="text"name="nama_restaurant" class="form-control" value="{{ old('nama_restaurant') }}" required />
                                         <p style="color:red;font-size:13px;">
                                           @if($errors->has('nama_restaurant'))
                                           <i class="fa fa-exclamation-circle"></i> {{$errors->first('nama_restaurant')}}
@@ -42,14 +42,21 @@
                                     </div>
                                       <div class="form-group">
                                           <label>Akreditasi<span style="color:red;"> *</span></label>
-                                          <input type="text" name="akreditasi" class="form-control" value="{{ old('akreditasi') }}">
-                                          <p style="color:red;font-size:13px;">
-                                            @if($errors->has('akreditasi'))
-                                            <i class="fa fa-exclamation-circle"></i> {{$errors->first('akreditasi')}}
-                                            @endif
-                                          </p>
+                                          <select class="form-control" name="akreditasi" required />
+                                            <option selected="true" disabled="disabled" value="{{ old('akreditasi') }}">Pilih</option>
+                                            <option value="Bintang 1">Bintang 1</option>
+                                            <option value="Bintang 2">Bintang 2</option>
+                                            <option value="Bintang 3">Bintang 3</option>
+                                            <option value="Bintang 4">Bintang 4</option>
+                                            <option value="Bintang 5">Bintang 5</option>
+                                        </select>
+                                        <p style="color:red;font-size:13px;">
+                                          @if($errors->has('akreditasi'))
+                                          <i class="fa fa-exclamation-circle"></i> {{$errors->first('akreditasi')}}
+                                          @endif
+                                        </p>
                                       </div>
-                                      <label>Gambar profile<span style="color:red;"> *</span></label>
+                                      <label>Gambar Restaurant<span style="color:red;"> *</span></label>
                                       <div class="form-group dropzone">
                                           <input class="form-control" name="image" type="file" value="{{ old('image') }}" multiple/>
                                       </div>
@@ -60,7 +67,7 @@
                                       </p>
                                       <div class="form-group">
                                           <label>Waktu Buka<span style="color:red;"> *</span></label>
-                                          <input type="text" name="waktu_buka" class="form-control" value="{{ old('waktu_buka') }}">
+                                          <input type="text" name="waktu_buka" class="form-control" value="{{ old('waktu_buka') }}" required />
                                           <p style="color:red;font-size:13px;">
                                             @if($errors->has('waktu_buka'))
                                             <i class="fa fa-exclamation-circle"></i> {{$errors->first('waktu_buka')}}
@@ -69,7 +76,7 @@
                                       </div>
                                       <div class="form-group">
                                         <label>Alamat<span style="color:red;"> *</span></label>
-                                        <textarea style="border-color:lightgrey;" name="alamat" rows="8" cols="58"></textarea>
+                                        <textarea style="border-color:lightgrey;" name="alamat" rows="8" cols="58" required /></textarea>
                                         <p style="color:red;font-size:13px;">
                                           @if($errors->has('alamat'))
                                           <i class="fa fa-exclamation-circle"></i> {{$errors->first('alamat')}}
@@ -79,8 +86,8 @@
                                   </div>
                                   <div class="col-lg-6">
                                     <div class="form-group">
-                                        <label>Jenis profile<span style="color:red;"> *</span></label>
-                                        <input type="text" name="jenis_restaurant" class="form-control" value="{{ old('jenis_restaurant') }}">
+                                        <label>Jenis Restaurant<span style="color:red;"> *</span></label>
+                                        <input type="text" name="jenis_restaurant" class="form-control" value="{{ old('jenis_restaurant') }}" required />
                                           <p style="color:red;font-size:13px;">
                                             @if($errors->has('jenis_restaurant'))
                                             <i class="fa fa-exclamation-circle"></i> {{$errors->first('jenis_restaurant')}}
@@ -89,16 +96,21 @@
                                     </div>
                                     <div class="form-group">
                                         <label>No Telpon<span style="color:red;"> *</span></label>
-                                        <input type="number" min="0" name="no_telp" class="form-control" value="{{ old('no_telp') }}">
-                                        <p style="color:red;font-size:13px;">
-                                          @if($errors->has('no_telp'))
-                                          <i class="fa fa-exclamation-circle"></i> {{$errors->first('no_telp')}}
-                                          @endif
+                                        <div class="input-group input-group-default">
+                                            <span class="input-group-btn">
+                                                <span class="btn btn-default btn-outline m-b-10" style="border-color:#e7e7e7;padding-bottom:7px;cursor:default;">+62</span>
+                                            </span>
+                                            <input type="number" min="0" name="no_telp" class="form-control" value="{{ old('no_telp') }}" required />
+                                            <p style="color:red;font-size:13px;">
+                                            @if($errors->has('no_telp'))
+                                                <i class="fa fa-exclamation-circle"></i> {{$errors->first('no_telp')}}
+                                            @endif
                                         </p>
+                                        </div>
                                     </div>
                                     <div class="form-group">
                                         <label>Email<span style="color:red;"> *</span></label>
-                                        <input type="text" name="email" class="form-control" value="{{ old('email') }}">
+                                        <input type="text" name="email" class="form-control" value="{{ old('email') }}" required />
                                         <p style="color:red;font-size:13px;">
                                           @if($errors->has('email'))
                                           <i class="fa fa-exclamation-circle"></i> {{$errors->first('email')}}
@@ -107,7 +119,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Waktu Tutup<span style="color:red;"> *</span></label>
-                                        <input type="text" name="waktu_tutup" class="form-control" value="{{ old('waktu_tutup') }}">
+                                        <input type="text" name="waktu_tutup" class="form-control" value="{{ old('waktu_tutup') }}" required />
                                         <p style="color:red;font-size:13px;">
                                           @if($errors->has('waktu_tutup'))
                                           <i class="fa fa-exclamation-circle"></i> {{$errors->first('waktu_tutup')}}
