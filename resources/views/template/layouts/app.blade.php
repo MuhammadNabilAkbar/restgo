@@ -268,8 +268,8 @@
                                 </li>
                                 <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Daerah</span></a>
                                     <ul aria-expanded="false" class="collapse">
-                                        <li><a href="#">List Daerah</a></li>
-                                        <li><a href="#">Tambah Daerah</a></li>
+                                        <li><a href="{{url('daerah')}}">List Daerah</a></li>
+                                        <li><a href="{{url('daerah/create')}}">Tambah Daerah</a></li>
                                     </ul>
                                 </li>
                                 <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Fasilitas</span></a>
@@ -309,7 +309,7 @@
                     <!-- End Sidebar scroll-->
                 </div>
                 <!-- End Left Sidebar  -->
-                <!-- Page wrapper  -->
+                <!-- Page wrapper  -->                
                 @yield('content')
                 <footer class="footer"> © 2018 All rights reserved. Template designed by Technosoft</a></footer>
                 <!-- End Page wrapper  -->
