@@ -11,7 +11,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-    <title>Inventaris</title>
+    <title>Inventaris @yield('title')</title>
     <!-- Bootstrap Core CSS -->
     <link href="{{ asset('template/css/lib/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Custom CSS -->
@@ -286,8 +286,8 @@
                                 </li>
                                 <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Kritik & Saran</span></a>
                                     <ul aria-expanded="false" class="collapse">
-                                        <li><a href="#">List Kritik & Saran</a></li>
-                                        <li><a href="#">Tambah Kritik & Saran</a></li>
+                                        <li><a href="{{route('kritiksaran.index')}}">List Kritik & Saran</a></li>
+                                        <li><a href="{{route('kritiksaran.create')}}">Tambah Kritik & Saran</a></li>
                                     </ul>
                                 </li>
                                 <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Kategori</span></a>
