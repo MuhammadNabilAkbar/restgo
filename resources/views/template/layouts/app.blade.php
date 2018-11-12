@@ -16,6 +16,10 @@
     <link href="{{ asset('template/css/lib/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="{{ asset('template/css/helper.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+
+
     <link href="{{ asset('template/css/style.css') }}" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -274,8 +278,8 @@
                                 </li>
                                 <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Fasilitas</span></a>
                                     <ul aria-expanded="false" class="collapse">
-                                        <li><a href="#">List Fasilitas</a></li>
-                                        <li><a href="#">Tambah Fasilitas</a></li>
+                                        <li><a href="{{ route('fasilitas.index') }}">List Fasilitas</a></li>
+                                        <li><a href="{{ route('fasilitas.create') }}">Tambah Fasilitas</a></li>
                                     </ul>
                                 </li>
                                 <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Pegawai</span></a>
@@ -315,8 +319,8 @@
                 <!-- End Page wrapper  -->
             </div>
             <!-- End Wrapper -->
-            <script src="js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
-            <script src="js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
+            <script src="{{ asset('template/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js') }}"></script>
+            <script src="{{ asset('template/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js') }}"></script>
             <!-- All Jquery -->
             <script src="{{ asset('template/js/lib/jquery/jquery.min.js') }}"></script>
             <!-- Bootstrap tether Core JavaScript -->
@@ -332,9 +336,9 @@
             <script src="{{ asset('template/js/custom.min.js') }}"></script>
 
             <!-- Sweet aler -->
-            <script src="js/lib/sweetalert/sweetalert.min.js"></script>
+            <script src="{{ asset('template/js/lib/sweetalert/sweetalert.min.js') }}"></script>
             <!-- scripit init-->
-            <script src="js/lib/sweetalert/sweetalert.init.js"></script>
+            <script src="{{ asset('template/js/lib/sweetalert/sweetalert.init.js') }}"></script>
             <!-- Select 2-->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
             <!-- Datatables -->
@@ -347,7 +351,7 @@
             <script src="{{ asset('template/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js') }}"></script>
             <script src="{{ asset('template/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js') }}"></script>
             <script src="{{ asset('template/js/lib/datatables/datatables-init.js') }}"></script>
-            <script type="text/javascript">
+            <script>
               $(document).ready(function(){
                 $('#example23').dataTables({
                   "ordering": false,
