@@ -292,8 +292,8 @@
                                 </li>
                                 <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Kategori</span></a>
                                     <ul aria-expanded="false" class="collapse">
-                                        <li><a href="#">List Kategori</a></li>
-                                        <li><a href="#">Tambah Kategori</a></li>
+                                        <li><a href="{{ route('kategori.index') }}">List Kategori</a></li>
+                                        <li><a href="{{ route('kategori.create') }}">Tambah Kategori</a></li>
                                     </ul>
                                 </li>
                                 <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">News</span></a>
