@@ -53,7 +53,7 @@ Route::prefix('minuman')->group(function(){
 	Route::post('/save', 'MinumanController@save')->name('minuman.save');
 	Route::get('/edit/{id}', 'MinumanController@edit')->name('minuman.edit');
 	Route::post('/update', 'MinumanController@update')->name('minuman.update');
-	Route::get('/delete/{id}', 'MinumanController@delete')->name('minuman.delete');
+	Route::post('/delete/{id}', 'MinumanController@delete')->name('minuman.delete');
 });
 
 // Fasilitas

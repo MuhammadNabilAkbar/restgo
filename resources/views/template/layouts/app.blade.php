@@ -310,7 +310,9 @@
                 </div>
                 <!-- End Left Sidebar  -->
                 <!-- Page wrapper  -->
-                @yield('content')
+                <div class="page-wrapper">
+                    @yield('content')
+                </div>
                 <footer class="footer"> © 2018 All rights reserved. Template designed by Technosoft</a></footer>
                 <!-- End Page wrapper  -->
             </div>
