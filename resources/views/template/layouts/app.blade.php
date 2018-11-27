@@ -256,50 +256,50 @@
                                 </li>
                                 <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Menu Makanan</span></a>
                                     <ul aria-expanded="false" class="collapse">
-                                        <li><a href="#">List Makanan</a></li>
-                                        <li><a href="#">Tambah Makanan</a></li>
+                                        <li><a href="{{ route('makanan.index') }}">List Makanan</a></li>
+                                        <li><a href="{{ route('makanan.create') }}">Tambah Makanan</a></li>
                                     </ul>
                                 </li>
                                 <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Menu Minuman</span></a>
                                     <ul aria-expanded="false" class="collapse">
-                                        <li><a href="#">List Minuman</a></li>
-                                        <li><a href="#">Tambah Minuman</a></li>
+                                        <li><a href="{{ route('minuman.index') }}">List Minuman</a></li>
+                                        <li><a href="{{ route('minuman.create') }}">Tambah Minuman</a></li>
                                     </ul>
                                 </li>
                                 <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Daerah</span></a>
                                     <ul aria-expanded="false" class="collapse">
-                                        <li><a href="{{url('daerah')}}">List Daerah</a></li>
-                                        <li><a href="{{url('daerah/create')}}">Tambah Daerah</a></li>
+                                        <li><a href="{{url('daerah.index')}}">List Daerah</a></li>
+                                        <li><a href="{{url('daerah.create')}}">Tambah Daerah</a></li>
                                     </ul>
                                 </li>
                                 <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Fasilitas</span></a>
                                     <ul aria-expanded="false" class="collapse">
-                                        <li><a href="#">List Fasilitas</a></li>
-                                        <li><a href="#">Tambah Fasilitas</a></li>
+                                        <li><a href="{{ route('fasilitas.index') }}">List Fasilitas</a></li>
+                                        <li><a href="{{ route('fasilitas.create') }}">Tambah Fasilitas</a></li>
                                     </ul>
                                 </li>
                                 <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Pegawai</span></a>
                                     <ul aria-expanded="false" class="collapse">
-                                        <li><a href="#">List Pegawai</a></li>
-                                        <li><a href="#">Tambah Pegawai</a></li>
+                                        <li><a href="{{ route('pegawai.index') }}">List Pegawai</a></li>
+                                        <li><a href="{{ route('pegawai.create') }}">Tambah Pegawai</a></li>
                                     </ul>
                                 </li>
                                 <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Kritik & Saran</span></a>
                                     <ul aria-expanded="false" class="collapse">
-                                        <li><a href="#">List Kritik & Saran</a></li>
-                                        <li><a href="#">Tambah Kritik & Saran</a></li>
+                                        <li><a href="{{ route('kritiksaran.index') }}">List Kritik & Saran</a></li>
+                                        <li><a href="{{ route('kritiksaran.create') }}">Tambah Kritik & Saran</a></li>
                                     </ul>
                                 </li>
                                 <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Kategori</span></a>
                                     <ul aria-expanded="false" class="collapse">
-                                        <li><a href="#">List Kategori</a></li>
-                                        <li><a href="#">Tambah Kategori</a></li>
+                                        <li><a href="{{ route('kategori.index') }}">List Kategori</a></li>
+                                        <li><a href="{{ route('kategori.create') }}">Tambah Kategori</a></li>
                                     </ul>
                                 </li>
                                 <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">News</span></a>
                                     <ul aria-expanded="false" class="collapse">
-                                        <li><a href="#">List News</a></li>
-                                        <li><a href="#">Tambah News</a></li>
+                                        <li><a href="{{ route('news.index') }}">List News</a></li>
+                                        <li><a href="{{ route('news.create') }}">Tambah News</a></li>
                                     </ul>
                                 </li>
                             </ul>
