@@ -37,7 +37,6 @@ Route::resource('makanan', 'MakananController');
 // 	Route::get('/delete/{id}', 'PegawaiController@delete')->name('pegawai.delete');
 // });
 
-<<<<<<< HEAD
 // Daerah
 Route::prefix('daerah')->group(function(){
 	Route::get('/','DaerahController@index')->name('daerah.index');
@@ -47,17 +46,7 @@ Route::prefix('daerah')->group(function(){
 	Route::post('/update', 'DaerahController@update')->name('daerah.update');
 	Route::get('/delete/{id}', 'DaerahController@destroy')->name('daerah.delete');
 });
-=======
-// // Daerah
-// Route::prefix('daerah')->group(function(){
-// 	Route::get('/','DaerahController@index')->name('daerah.index');
-// 	Route::get('/create', 'DaerahController@create')->name('daerah.create');
-// 	Route::post('/save', 'DaerahController@save')->name('daerah.save');
-// 	Route::get('/edit/{id}', 'DaerahController@edit')->name('daerah.edit');
-// 	Route::post('/update', 'DaerahController@update')->name('daerah.update');
-// 	Route::get('/delete/{id}', 'DaerahController@delete')->name('daerah.delete');
-// });
->>>>>>> makanan
+
 
 
 // // Minuman

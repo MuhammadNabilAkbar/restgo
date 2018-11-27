@@ -304,15 +304,10 @@
                         <li class="breadcrumb-item active">Dashboard</li>
                     </ol>
                 </div>
-<<<<<<< HEAD
-                <!-- End Left Sidebar  -->
-                <!-- Page wrapper  -->                
-=======
             </div>
             <!-- End Bread crumb -->
             <!-- Container fluid  -->
             <div class="container-fluid">
->>>>>>> makanan
                 @yield('content')
             </div>
             <!-- End Container fluid  -->
