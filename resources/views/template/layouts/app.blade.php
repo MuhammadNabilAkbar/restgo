@@ -268,8 +268,8 @@
                                 </li>
                                 <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Daerah</span></a>
                                     <ul aria-expanded="false" class="collapse">
-                                        <li><a href="{{url('daerah.index')}}">List Daerah</a></li>
-                                        <li><a href="{{url('daerah.create')}}">Tambah Daerah</a></li>
+                                        <li><a href="{{ route('daerah.index')}}">List Daerah</a></li>
+                                        <li><a href="{{ route('daerah.create')}}">Tambah Daerah</a></li>
                                     </ul>
                                 </li>
                                 <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Fasilitas</span></a>
