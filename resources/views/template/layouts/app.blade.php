@@ -30,10 +30,10 @@
     <!-- Preloader - style you can find in spinners.css -->
     <div class="preloader">
         <svg class="circular" viewBox="25 25 50 50">
-         <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
-     </div>
-     <!-- Main wrapper  -->
-     <div id="main-wrapper">
+           <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+       </div>
+       <!-- Main wrapper  -->
+       <div id="main-wrapper">
         <!-- header header  -->
         <div class="header">
             <nav class="navbar top-navbar navbar-expand-md navbar-light">
@@ -227,18 +227,18 @@
                                                 document.getElementById('logout-form').submit();">
                                                 <i class="fa fa-power-off"></i> Logout</a></li>
                                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                                 @csrf
-                                             </form>
-                                         </ul>
-                                     </div>
-                                 </li>
-                             </ul>
-                         </div>
-                     </nav>
-                 </div>
-                 <!-- End header header -->
-                 <!-- Left Sidebar  -->
-                 <div class="left-sidebar">
+                                                   @csrf
+                                               </form>
+                                           </ul>
+                                       </div>
+                                   </li>
+                               </ul>
+                           </div>
+                       </nav>
+                   </div>
+                   <!-- End header header -->
+                   <!-- Left Sidebar  -->
+                   <div class="left-sidebar">
                     <!-- Sidebar scroll-->
                     <div class="scroll-sidebar">
                         <!-- Sidebar navigation-->
